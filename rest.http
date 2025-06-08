@@ -1,0 +1,10 @@
+### send email to server
+
+POST http://localhost:8000
+Content-Type: application/json
+
+{
+    "to": "grayson.9999@gmail.com",
+    "subject": "test subject",
+    "message": "test body messge, let's check it out."
+}
