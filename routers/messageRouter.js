@@ -15,6 +15,10 @@ router.post("/", async (req, res) => {
       });
     }
     await userUpdateTemplate({ subject, message, email, name });
+    res.json({
+      status: "success",
+      message: "Email sent successfully!",
+    });
   } catch (error) {
     console.log("Error sending email:", error);
     res.status(500).json({
